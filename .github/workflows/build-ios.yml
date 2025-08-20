@@ -47,6 +47,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: '3.2'
           bundler-cache: true
           working-directory: ./examples/${{ env.PROJECT_NAME }}/
 
